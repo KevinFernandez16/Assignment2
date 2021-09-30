@@ -9,7 +9,9 @@ Array.prototype.myEach = function(callbackFn) {
 
     }
 };
-
+//Used to test foreach function
+//const array1 = ['a', 'b', 'c'];
+//array1.myEach(element => console.log(element));
 // MAP //
 Array.prototype.myMap = function() {
 
