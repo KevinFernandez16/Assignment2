@@ -18,9 +18,21 @@ Array.prototype.myMap = function() {
 };
 
 // FILTER //
-Array.prototype.myFilter = function() {
-
+Array.prototype.myFilter = function(callbackFn) {
+    //create an empty array 
+    const new_array = [];
+    for (let i = 0; i < this.length;i++){
+        if (callbackFn(this[i], i, this))
+          new_array.push(this[i]);
+        
+    }
+    return new_array;
 };
+//used to test filter function
+//const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+//const result = words.myFilter(word => word.length > 6);
+//console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
 
 // SOME //
 Array.prototype.mySome = function() {
