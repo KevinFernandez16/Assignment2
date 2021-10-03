@@ -61,6 +61,14 @@ Array.prototype.myEvery = function(callbackFn) {
     }
 };
 
+//const isBelowThreshold = (currentValue) => currentValue < 40;
+
+//const array1 = [1, 30, 39, 29, 10, 13, 41];
+
+//console.log(array1.myEvery(isBelowThreshold));
+// expected output: true
+
+
 // REDUCE //
 Array.prototype.myReduce = function() {
 
