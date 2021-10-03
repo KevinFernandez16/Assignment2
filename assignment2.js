@@ -75,9 +75,28 @@ Array.prototype.myReduce = function() {
 };
 
 // INCLUDES //
-Array.prototype.myIncludes = function() {
+Array.prototype.myIncludes = function(callbackFn) {
+    let includes = false;
+    for (let i = 0; i < this.length; i++){
+        if (this[i] === callbackFn)
+            includes = true;
+    }
+    return includes;
 
 };
+
+//const array1 = [1, 2, 3];
+
+//console.log(array1.myIncludes(2));
+// expected output: true
+
+//const pets = ['cat', 'dog', 'bat'];
+
+//console.log(pets.myIncludes('cat'));
+// expected output: true
+
+//console.log(pets.myIncludes('at'));
+// expected output: false
 
 // INDEXOF //
 Array.prototype.myIndexOf = function() {
