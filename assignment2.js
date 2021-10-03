@@ -27,6 +27,8 @@ Array.prototype.myEvery = function() {
 Array.prototype.myReduce = function() {
 
 };
+//expected answer should be 10
+
 
 // INCLUDES //
 Array.prototype.myIncludes = function() {
