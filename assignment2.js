@@ -52,8 +52,13 @@ Array.prototype.mySome = function() {
 };
 
 // EVERY //
-Array.prototype.myEvery = function() {
-
+Array.prototype.myEvery = function(callbackFn) {
+    for (let i = 0; i < this.length; i++){
+        if (!callbackFn(this[i], i, this))
+            return false;
+        else
+            return true;
+    }
 };
 
 // REDUCE //
