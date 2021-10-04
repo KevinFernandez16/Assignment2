@@ -62,9 +62,22 @@ Array.prototype.mySome = function (callback, argument) {
 
 
 // EVERY //
-Array.prototype.myEvery = function() {
-
+Array.prototype.myEvery = function(callbackFn) {
+    for (let i = 0; i < this.length; i++){
+        if (!callbackFn(this[i], i, this))
+            return false;
+        else
+            return true;
+    }
 };
+
+//const isBelowThreshold = (currentValue) => currentValue < 40;
+
+//const array1 = [1, 30, 39, 29, 10, 13, 41];
+
+//console.log(array1.myEvery(isBelowThreshold));
+// expected output: true
+
 
 // REDUCE //
 //const array = [1, 2, 3, 4];//example array
