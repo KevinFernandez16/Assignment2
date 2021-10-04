@@ -13,9 +13,9 @@ Array.prototype.myEach = function(callbackFn) {
 //const array1 = ['a', 'b', 'c'];
 //array1.myEach(element => console.log(element));
 // MAP //
-let array = [2, 4, 6];// example array
-let array2 = [3, 6, 9];
-Array.prototype.myMap = function(print_array){
+//let array = [2, 4, 6];// example array
+//let array2 = [3, 6, 9];
+//Array.prototype.myMap = function(print_array){
     let array_bracket = [];
     let array_size = this.length;// set a variable equal to the array's length.
     for (let i = 0; i < array_size; i++){
@@ -24,10 +24,10 @@ Array.prototype.myMap = function(print_array){
     }
     return array_bracket;
 };
-array = array.myMap(e => e * 2);//multiplies array values by 2
-array2 = array2.myMap(e => e + 5);// adds the second array values by 5
-console.log(array);//prints out the array
-console.log(array2);//prints out array2
+//array = array.myMap(e => e * 2);//multiplies array values by 2
+//array2 = array2.myMap(e => e + 5);// adds the second array values by 5
+//console.log(array);//prints out the array
+//console.log(array2);//prints out array2
 
 // FILTER //
 Array.prototype.myFilter = function(callbackFn) {
@@ -47,7 +47,7 @@ Array.prototype.myFilter = function(callbackFn) {
 // expected output: Array ["exuberant", "destruction", "present"]
 
 // SOME //
-const array = [2, 4, 6]// example array
+//const array = [2, 4, 6]// example array
 Array.prototype.mySome = function (callback, argument) {
     for (let i = 0; i < this.length; i++) {//checks all values of array
         if (callback(i, this, this[i], argument))
@@ -55,10 +55,10 @@ Array.prototype.mySome = function (callback, argument) {
     }
     return false;
 };
-const check_array = (element) => element % 2 === 0;//prints true
-const check_array2 = (element) => element %! 2 === 0;//prints false
-console.log(array.mySome(check_array));//prints to console
-console.log(array.mySome(check_array2));
+//const check_array = (element) => element % 2 === 0;//prints true
+//const check_array2 = (element) => element %! 2 === 0;//prints false
+//console.log(array.mySome(check_array));//prints to console
+//console.log(array.mySome(check_array2));
 
 
 // EVERY //
@@ -182,10 +182,11 @@ Object.grabValues = function (obj) {
     }
     return array;//return the array
 };
-const object1 = {//given example
-    a: 'somestring',
-    b: 42,
-    c: false
-};
 
-console.log(Object.values(object1));
+//const object1 = {//given example
+    //a: 'somestring',
+   // b: 42,
+    //c: false
+//};
+
+//console.log(Object.values(object1));
