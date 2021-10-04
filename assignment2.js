@@ -98,7 +98,6 @@ Array.prototype.myLastIndexOf = function (searchElement, element) {
 
     }
     return -1;//returns -1 if false
-=======
 //Array.prototype.myLastIndexOf = function (searchElement, element) {
 };
 //console.log(animals.myLastIndexOf('Dodo'));// should output 3
