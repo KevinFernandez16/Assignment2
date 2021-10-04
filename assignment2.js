@@ -34,7 +34,7 @@ Array.prototype.myIncludes = function() {
 };
 
 // INDEXOF //
-//const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];//example array
+//const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];//example array.
 Array.prototype.myIndexOf = function (searchElement, element) {
     let animal = element//set argument to variable animal
     for (let i = 0 || animal; i < this.length; i++) {
