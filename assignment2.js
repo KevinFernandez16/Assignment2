@@ -6,7 +6,7 @@ Array.prototype.myEach = function() {
 // MAP //
 let array = [2, 4, 6];// example array
 let array2 = [3, 6, 9];
-Array.prototype.myMap = function(print_array){
+//Array.prototype.myMap = function(print_array){
     let array_bracket = [];
     let array_size = this.length;// set a variable equal to the array's length.
     for (let i = 0; i < array_size; i++){
@@ -15,10 +15,10 @@ Array.prototype.myMap = function(print_array){
     }
     return array_bracket;
 };
-array = array.myMap(e => e * 2);//multiplies array values by 2
-array2 = array2.myMap(e => e + 5);// adds the second array values by 5
-console.log(array);//prints out the array
-console.log(array2);//prints out array2
+//array = array.myMap(e => e * 2);//multiplies array values by 2
+//array2 = array2.myMap(e => e + 5);// adds the second array values by 5
+//console.log(array);//prints out the array
+//console.log(array2);//prints out array2
 
 // FILTER //
 Array.prototype.myFilter = function() {
@@ -26,7 +26,7 @@ Array.prototype.myFilter = function() {
 };
 
 // SOME //
-const array = [2, 4, 6]// example array
+//const array = [2, 4, 6]// example array
 Array.prototype.mySome = function (callback, argument) {
     for (let i = 0; i < this.length; i++) {//checks all values of array
         if (callback(i, this, this[i], argument))
@@ -34,10 +34,10 @@ Array.prototype.mySome = function (callback, argument) {
     }
     return false;
 };
-const check_array = (element) => element % 2 === 0;//prints true
-const check_array2 = (element) => element %! 2 === 0;//prints false
-console.log(array.mySome(check_array));//prints to console
-console.log(array.mySome(check_array2));
+//const check_array = (element) => element % 2 === 0;//prints true
+//const check_array2 = (element) => element %! 2 === 0;//prints false
+//console.log(array.mySome(check_array));//prints to console
+//console.log(array.mySome(check_array2));
 
 
 // EVERY //
@@ -46,7 +46,7 @@ Array.prototype.myEvery = function() {
 };
 
 // REDUCE //
-const array = [1, 2, 3, 4];//example array
+//const array = [1, 2, 3, 4];//example array
 Array.prototype.myReduce = function (callback, value) {
     let total = 0;
     for (let i = 0; i < this.length; i++) {
@@ -55,8 +55,8 @@ Array.prototype.myReduce = function (callback, value) {
     }
     return total;
 };
-const reducer = (callback, value) => callback + value;
-console.log(array.myReduce(reducer));//prints to the console
+//const reducer = (callback, value) => callback + value;
+//console.log(array.myReduce(reducer));//prints to the console
 //expected answer should be 10
 
 
@@ -86,8 +86,7 @@ Array.prototype.myPush = function() {
 };
 
 // LASTINDEXOF //
-<<<<<<< HEAD
-const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];//example array
+//const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];//example array
 Array.prototype.myLastIndexOf = function (searchElement, element) {
     let animal = element//set argument to variable animal
     backwards = 1;
@@ -100,11 +99,10 @@ Array.prototype.myLastIndexOf = function (searchElement, element) {
     }
     return -1;//returns -1 if false
 =======
-Array.prototype.myLastIndexOf = function (searchElement, element) {
->>>>>>> grabValues
+//Array.prototype.myLastIndexOf = function (searchElement, element) {
 };
-console.log(animals.myLastIndexOf('Dodo'));// should output 3
-console.log(animals.myLastIndexOf('Tiger'));// should output 1
+//console.log(animals.myLastIndexOf('Dodo'));// should output 3
+//console.log(animals.myLastIndexOf('Tiger'));// should output 1
 
 // KEYS //
 Object.grabKeys = function() {
@@ -119,10 +117,10 @@ Object.grabValues = function (obj) {
     }
     return array;//return the array
 };
-const object1 = {//given example
-    a: 'somestring',
-    b: 42,
-    c: false
-};
+//const object1 = {//given example
+   // a: 'somestring',
+   // b: 42,
+   // c: false
+//};
 
-console.log(Object.values(object1));
+//console.log(Object.values(object1));
