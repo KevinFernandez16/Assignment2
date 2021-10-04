@@ -1,8 +1,17 @@
 // FOR EACH //
-Array.prototype.myEach = function() {
+Array.prototype.myEach = function(callbackFn) {
+    for (let i = 0; i < this.length; i++){
+        if (this[i] === undefined ) continue;
+        //element
+        //element index 
+        //element index array
+        callbackFn(this[i], i, this);
 
+    }
 };
-
+//Used to test foreach function
+//const array1 = ['a', 'b', 'c'];
+//array1.myEach(element => console.log(element));
 // MAP //
 let array = [2, 4, 6];// example array
 let array2 = [3, 6, 9];
