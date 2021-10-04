@@ -26,9 +26,19 @@ Array.prototype.myFilter = function() {
 };
 
 // SOME //
-Array.prototype.mySome = function() {
-
+const array = [2, 4, 6]// example array
+Array.prototype.mySome = function (callback, argument) {
+    for (let i = 0; i < this.length; i++) {//checks all values of array
+        if (callback(i, this, this[i], argument))
+            return true;
+    }
+    return false;
 };
+const check_array = (element) => element % 2 === 0;//prints true
+const check_array2 = (element) => element %! 2 === 0;//prints false
+console.log(array.mySome(check_array));//prints to console
+console.log(array.mySome(check_array2));
+
 
 // EVERY //
 Array.prototype.myEvery = function() {
