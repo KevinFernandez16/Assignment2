@@ -86,6 +86,7 @@ Array.prototype.myPush = function() {
 };
 
 // LASTINDEXOF //
+<<<<<<< HEAD
 const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];//example array
 Array.prototype.myLastIndexOf = function (searchElement, element) {
     let animal = element//set argument to variable animal
@@ -98,6 +99,9 @@ Array.prototype.myLastIndexOf = function (searchElement, element) {
 
     }
     return -1;//returns -1 if false
+=======
+Array.prototype.myLastIndexOf = function (searchElement, element) {
+>>>>>>> grabValues
 };
 console.log(animals.myLastIndexOf('Dodo'));// should output 3
 console.log(animals.myLastIndexOf('Tiger'));// should output 1
@@ -108,6 +112,17 @@ Object.grabKeys = function() {
 };
 
 // VALUES //
-Object.grabValues = function() {
-
+Object.grabValues = function (obj) {
+    let array = [ ];//defined an empty array to grab and place values into
+    for (let values in Object.grabValues(obj)) {//for every value in object, a new set of data is pushed into our new array
+        values = array.push(obj[value]);//push adds elements to end of an array
+    }
+    return array;//return the array
 };
+const object1 = {//given example
+    a: 'somestring',
+    b: 42,
+    c: false
+};
+
+console.log(Object.values(object1));
