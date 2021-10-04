@@ -15,7 +15,7 @@ Array.prototype.myEach = function(callbackFn) {
 // MAP //
 let array = [2, 4, 6];// example array
 let array2 = [3, 6, 9];
-//Array.prototype.myMap = function(print_array){
+Array.prototype.myMap = function(print_array){
     let array_bracket = [];
     let array_size = this.length;// set a variable equal to the array's length.
     for (let i = 0; i < array_size; i++){
