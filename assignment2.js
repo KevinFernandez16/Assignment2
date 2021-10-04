@@ -212,7 +212,7 @@ Object.grabKeys = function(obj) {
 Object.grabValues = function (obj) {
     let array = [ ];//defined an empty array to grab and place values into
     for (let values in Object.grabValues(obj)) {//for every value in object, a new set of data is pushed into our new array
-        values = array.push(obj[value]);//push adds elements to end of an array
+        values = array.push(obj[value]);//push adds elements to end of an arra
     }
     return array;//return the array
 };
